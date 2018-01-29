@@ -16,7 +16,6 @@
         <!--BucketListViewController-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController title="BucketListViewController" id="9pv-A4-QxB" customClass="BucketListViewController" customModule="BucketList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -113,13 +112,13 @@
                         <outlet property="BucketListTableView" destination="TDG-6B-2ou" id="WNE-dM-eXx"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2552.8000000000002" y="-429.53523238380814"/>
         </scene>
         <!--AddToBucket-->
         <scene sceneID="Dj4-KU-6sS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i59-cF-wb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="AddToBucket" id="DSL-dG-jeR" customClass="AddToBucketViewController" customModule="BucketList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oSw-Xk-aXw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
@@ -223,13 +222,13 @@
                         <outlet property="titleField" destination="lkH-mU-35y" id="aWQ-fr-3Nk"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i59-cF-wb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3445.5999999999999" y="-430.88455772113946"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="BucketList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -260,6 +259,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UyS-un-OSZ"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2553" y="355"/>
         </scene>
@@ -298,7 +298,6 @@
         <!--BucketList-->
         <scene sceneID="Mer-lc-9ed">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MtY-HZ-hDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ybd-xZ-WCD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="BucketList" image="icons8-Wish List" landscapeImage="icons8-Wish List" selectedImage="icons8-Wish List" id="acW-dT-cKf"/>
                     <toolbarItems/>
@@ -311,6 +310,7 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="FFr-oa-ki5"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MtY-HZ-hDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1648" y="-429.08545727136436"/>
         </scene>

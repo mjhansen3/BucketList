@@ -23,6 +23,7 @@ class AddToBucketViewController: UIViewController, UIImagePickerControllerDelega
             Titles.append(titleField.text!)
             Descriptions.append(descriptionField.text)
             // Dates.append(datePicker.datePickerMode)
+            // Images.append(<#T##newElement: String##String#>)
             
             
             dismiss(animated: true, completion: nil)
@@ -142,6 +143,18 @@ class AddToBucketViewController: UIViewController, UIImagePickerControllerDelega
             self.present(self.imagePicker, animated: true, completion: nil)
         }
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let chosenImage = info[UIImagePickerControllerEditedImage]
+        img.image = chosenImage as? UIImage
+        
+        dismiss(animated: true) {() -> Void in }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true) {() -> Void in }
+    }
+    
     
     @IBAction func cancelbucket(_ sender: Any) {
         dismiss(animated: true, completion: nil)
