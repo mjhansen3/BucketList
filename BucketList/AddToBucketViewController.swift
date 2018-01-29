@@ -167,6 +167,11 @@ class AddToBucketViewController: UIViewController, UIImagePickerControllerDelega
         // largeTitleNavBar()
         // self.img.layer.cornerRadius = img.frame.size.height / 2.0
         // self.img.clipsToBounds = true
+        
+        descriptionField.layer.cornerRadius = 8.0
+        descriptionField.layer.masksToBounds = true
+        descriptionField.layer.borderColor = UIColor.lightGray.cgColor
+        descriptionField.layer.borderWidth = 1.0
     }
     
     
