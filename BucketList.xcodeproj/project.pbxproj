@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AC07D1FA201E1CFC004775D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D1F9201E1CFC004775D6 /* AppDelegate.swift */; };
-		AC07D1FC201E1CFC004775D6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D1FB201E1CFC004775D6 /* FirstViewController.swift */; };
-		AC07D1FE201E1CFC004775D6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D1FD201E1CFC004775D6 /* SecondViewController.swift */; };
 		AC07D201201E1CFC004775D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC07D1FF201E1CFC004775D6 /* Main.storyboard */; };
 		AC07D203201E1CFC004775D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC07D202201E1CFC004775D6 /* Assets.xcassets */; };
 		AC07D206201E1CFC004775D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC07D204201E1CFC004775D6 /* LaunchScreen.storyboard */; };
 		AC07D211201E1CFC004775D6 /* BucketListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D210201E1CFC004775D6 /* BucketListTests.swift */; };
 		AC07D21C201E1CFC004775D6 /* BucketListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D21B201E1CFC004775D6 /* BucketListUITests.swift */; };
+		AC07D22A201E270C004775D6 /* BucketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D229201E270C004775D6 /* BucketListViewController.swift */; };
+		AC07D22C201E4B08004775D6 /* BucketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D22B201E4B08004775D6 /* BucketListTableViewCell.swift */; };
+		AC07D22E201E5E6E004775D6 /* AddToBucketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D22D201E5E6E004775D6 /* AddToBucketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,6 @@
 /* Begin PBXFileReference section */
 		AC07D1F6201E1CFC004775D6 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC07D1F9201E1CFC004775D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC07D1FB201E1CFC004775D6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		AC07D1FD201E1CFC004775D6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AC07D200201E1CFC004775D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC07D202201E1CFC004775D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC07D205201E1CFC004775D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,9 @@
 		AC07D217201E1CFC004775D6 /* BucketListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BucketListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC07D21B201E1CFC004775D6 /* BucketListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITests.swift; sourceTree = "<group>"; };
 		AC07D21D201E1CFC004775D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC07D229201E270C004775D6 /* BucketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListViewController.swift; sourceTree = "<group>"; };
+		AC07D22B201E4B08004775D6 /* BucketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewCell.swift; sourceTree = "<group>"; };
+		AC07D22D201E5E6E004775D6 /* AddToBucketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBucketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				AC07D1F9201E1CFC004775D6 /* AppDelegate.swift */,
-				AC07D1FB201E1CFC004775D6 /* FirstViewController.swift */,
-				AC07D1FD201E1CFC004775D6 /* SecondViewController.swift */,
+				AC07D229201E270C004775D6 /* BucketListViewController.swift */,
+				AC07D22B201E4B08004775D6 /* BucketListTableViewCell.swift */,
+				AC07D22D201E5E6E004775D6 /* AddToBucketViewController.swift */,
 				AC07D1FF201E1CFC004775D6 /* Main.storyboard */,
 				AC07D202201E1CFC004775D6 /* Assets.xcassets */,
 				AC07D204201E1CFC004775D6 /* LaunchScreen.storyboard */,
@@ -262,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC07D1FE201E1CFC004775D6 /* SecondViewController.swift in Sources */,
+				AC07D22C201E4B08004775D6 /* BucketListTableViewCell.swift in Sources */,
+				AC07D22A201E270C004775D6 /* BucketListViewController.swift in Sources */,
 				AC07D1FA201E1CFC004775D6 /* AppDelegate.swift in Sources */,
-				AC07D1FC201E1CFC004775D6 /* FirstViewController.swift in Sources */,
+				AC07D22E201E5E6E004775D6 /* AddToBucketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mjhansen.BucketList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,7 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mjhansen.BucketList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
