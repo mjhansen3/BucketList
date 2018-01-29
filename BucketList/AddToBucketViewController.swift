@@ -29,10 +29,12 @@ class AddToBucketViewController: UIViewController, UIImagePickerControllerDelega
         }
     }
     
-    // @IBOutlet var profileButton: UIButton!
+    // @IBOutlet var profileButton: UIButtonX!
     var imagePicker: UIImagePickerController!
+
     
-    @IBAction func uploadImage(_ sender: Any) {
+    @IBAction func uploadImage(_ sender: UIImageView) {
+        
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
