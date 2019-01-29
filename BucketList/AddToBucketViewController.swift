@@ -23,7 +23,7 @@ class AddToBucketViewController: UIViewController, UIImagePickerControllerDelega
             Titles.append(titleField.text!)
             Descriptions.append(descriptionField.text)
             // Dates.append(datePicker.datePickerMode)
-            // Images.append(<#T##newElement: String##String#>)
+            // Images=[UIImage, img.image]
             
             
             dismiss(animated: true, completion: nil)
@@ -165,8 +165,8 @@ class AddToBucketViewController: UIViewController, UIImagePickerControllerDelega
 
         // Do any additional setup after loading the view.
         // largeTitleNavBar()
-        // self.img.layer.cornerRadius = img.frame.size.height / 2.0
-        // self.img.clipsToBounds = true
+        self.img.layer.cornerRadius = img.frame.size.height / 2.0
+        self.img.clipsToBounds = true
         
         descriptionField.layer.cornerRadius = 8.0
         descriptionField.layer.masksToBounds = true

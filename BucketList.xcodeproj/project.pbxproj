@@ -16,6 +16,7 @@
 		AC07D22A201E270C004775D6 /* BucketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D229201E270C004775D6 /* BucketListViewController.swift */; };
 		AC07D22C201E4B08004775D6 /* BucketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D22B201E4B08004775D6 /* BucketListTableViewCell.swift */; };
 		AC07D22E201E5E6E004775D6 /* AddToBucketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC07D22D201E5E6E004775D6 /* AddToBucketViewController.swift */; };
+		AC6999752029D22C00C816CE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6999742029D22C00C816CE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AC07D229201E270C004775D6 /* BucketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListViewController.swift; sourceTree = "<group>"; };
 		AC07D22B201E4B08004775D6 /* BucketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewCell.swift; sourceTree = "<group>"; };
 		AC07D22D201E5E6E004775D6 /* AddToBucketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBucketViewController.swift; sourceTree = "<group>"; };
+		AC6999742029D22C00C816CE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				AC07D229201E270C004775D6 /* BucketListViewController.swift */,
 				AC07D22B201E4B08004775D6 /* BucketListTableViewCell.swift */,
 				AC07D22D201E5E6E004775D6 /* AddToBucketViewController.swift */,
+				AC6999742029D22C00C816CE /* DetailViewController.swift */,
 				AC07D1FF201E1CFC004775D6 /* Main.storyboard */,
 				AC07D202201E1CFC004775D6 /* Assets.xcassets */,
 				AC07D204201E1CFC004775D6 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				AC07D22C201E4B08004775D6 /* BucketListTableViewCell.swift in Sources */,
 				AC07D22A201E270C004775D6 /* BucketListViewController.swift in Sources */,
+				AC6999752029D22C00C816CE /* DetailViewController.swift in Sources */,
 				AC07D1FA201E1CFC004775D6 /* AppDelegate.swift in Sources */,
 				AC07D22E201E5E6E004775D6 /* AddToBucketViewController.swift in Sources */,
 			);

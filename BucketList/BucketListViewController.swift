@@ -8,26 +8,40 @@
 
 import UIKit
 
-var Titles = ["Buy Rolex", "Nike Roshe 2", "Spiritual"]
-var Descriptions = ["My firts description goint in here", "My second description goint in here", "My third description goint in here"]
-let Images = ["ghost", "ghost", "ghost"]
-var Dates = ["25/01/2018", "25/01/2018", "25/01/2018"]
+var Titles = [String]()
+var Descriptions = [String]()
+var Images = [String]()
+var Dates = [String]()
 
-class BucketListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BucketListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     @IBOutlet weak var BucketListTableView: UITableView!
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    var filteredData = [String]()
+    var isSearching = false
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isSearching {
+            return filteredData.count
+        }
+        
         return (Titles.count)
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! BucketListTableViewCell
-        cell.Title.text = Titles[indexPath.row]
-        cell.Description.text = Descriptions[indexPath.row]
-        // cell.Date.text = Dates[indexPath.row]
-        // cell.ThumbImage.image = UIImage(named: (Images[indexPath.row] + ".png"))
+        
+        if isSearching {
+            cell.Title.text = filteredData[indexPath.row]
+        } else {
+            cell.Title.text = Titles[indexPath.row]
+            cell.Description.text = Descriptions[indexPath.row]
+            // cell.Date.text = Dates[indexPath.row]
+            // cell.ThumbImage.image = UIImage(named: (Images[indexPath.row] + ".png"))
+        }
         
         return (cell)
     }
@@ -46,12 +60,33 @@ class BucketListViewController: UIViewController, UITableViewDelegate, UITableVi
 
         // Do any additional setup after loading the view.
         searchNavBar()
+        // searchBar.delegate = self
+        // searchBar.returnKeyType = UIReturnKeyType.done
+        
+        
+//        self.cell.ThumbImage.layer.cornerRadius = ThumbImage.frame.size.height / 2.0
+//        self.cell.ThumbImage.clipsToBounds = true
     }
     
     func searchNavBar () {
         let searchController = UISearchController(searchResultsController: nil)
         navigationItem.searchController = searchController
         
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchBar.text == nil || searchBar.text == "" {
+            isSearching = false
+            view.endEditing(true)
+            
+            BucketListTableView.reloadData()
+        } else {
+            isSearching = true
+            filteredData = Titles.filter({$0 == searchBar.text})
+            
+            BucketListTableView.reloadData()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

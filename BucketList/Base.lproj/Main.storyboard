@@ -83,6 +83,7 @@
                                             <outlet property="Description" destination="Y0K-6u-eWN" id="HdJ-fM-Uvw"/>
                                             <outlet property="ThumbImage" destination="xe4-UJ-iwc" id="QBP-0t-jSG"/>
                                             <outlet property="Title" destination="mzc-PS-8hn" id="qQ4-MT-kdd"/>
+                                            <segue destination="oHM-Xn-Mkz" kind="show" action="showDetailViewController:sender:" id="VEn-3y-ENx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -225,6 +226,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i59-cF-wb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3445.5999999999999" y="-430.88455772113946"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Qcz-7g-OF1">
+            <objects>
+                <viewController id="oHM-Xn-Mkz" customClass="DetailViewController" customModule="BucketList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JG2-NB-x64">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OaS-Z5-kV1">
+                                <rect key="frame" x="0.0" y="116" width="375" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OaS-Z5-kV1" secondAttribute="height" multiplier="125:77" id="TEN-MB-NeF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ig-dE-P3H">
+                                <rect key="frame" x="16" y="355" width="343" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Ig-dE-P3H" secondAttribute="height" multiplier="343:251" id="Lum-54-noT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Ig-dE-P3H" firstAttribute="leading" secondItem="wPb-3f-boK" secondAttribute="leading" constant="16" id="GC5-Tu-2fA"/>
+                            <constraint firstItem="wPb-3f-boK" firstAttribute="bottom" secondItem="2Ig-dE-P3H" secondAttribute="bottom" constant="12" id="X3T-wU-UiF"/>
+                            <constraint firstItem="OaS-Z5-kV1" firstAttribute="top" secondItem="wPb-3f-boK" secondAttribute="top" id="fHg-PW-4rS"/>
+                            <constraint firstItem="wPb-3f-boK" firstAttribute="trailing" secondItem="2Ig-dE-P3H" secondAttribute="trailing" constant="16" id="fn2-UT-aaz"/>
+                            <constraint firstItem="OaS-Z5-kV1" firstAttribute="trailing" secondItem="wPb-3f-boK" secondAttribute="trailing" id="hky-Gw-LeF"/>
+                            <constraint firstItem="OaS-Z5-kV1" firstAttribute="leading" secondItem="wPb-3f-boK" secondAttribute="leading" id="rX6-K0-V44"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wPb-3f-boK"/>
+                    </view>
+                    <connections>
+                        <outlet property="Description" destination="2Ig-dE-P3H" id="uCl-cb-N2A"/>
+                        <outlet property="ThumbImage" destination="OaS-Z5-kV1" id="3fC-hH-v8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAa-QD-jAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3445.5999999999999" y="-1268.8155922038982"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
